@@ -161,6 +161,10 @@ span{
     box-shadow: none;
 }
 
+.home-content .upr:hover{
+    cursor: pointer;
+}
+
 .about{
     display: flex;
     justify-content: center;
