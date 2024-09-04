@@ -161,9 +161,14 @@ span{
     box-shadow: none;
 }
 
-.home-content .upr:hover{
+.download-btn {
     cursor: pointer;
-}
+  }
+  
+  .download-btn:hover {
+    cursor: pointer;
+  }
+  
 
 .about{
     display: flex;
