@@ -5,13 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio Website | Jawad.10x</title>
+  <title>Portfolio | Jawad.10x</title>
 
   <!-- box icons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
   <!-- custom css -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Logo -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 
 <body>
@@ -25,7 +29,7 @@
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#portfolio">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -36,7 +40,9 @@
       <h3>Hello, It's Me</h3>
       <h1>Muhammad Jawad</h1>
       <h3>And I'm a <span class="multiple-text"></span></h3>
-      <p>👨‍🎓 4th Year Computer Science Enginnering Student at Barani Institute of Information Technology</p>
+      <p>🎓 Computer Science Graduate with a specialization in Artificial Intelligence from Barani Institute of
+        Information
+        Technology, affiliated with Arid Agriculture University</p>
       <div class="social-media">
         <a href="https://www.facebook.com/profile.php?id=100089376572329" target="_blank"><i
             class='bx bxl-facebook'></i></a>
@@ -45,8 +51,8 @@
         <a href="https://github.com/mj24680" target="_blank"><i class='bx bxl-github'></i></a>
       </div>
 
-      <a href="CV.pdf" class="btn" download="Muhammad_Jawad_CV.pdf">Download CV</a>
-
+      <a href="CV.pdf" class="btn" download="Muhammad Jawad.pdf">Download CV</a>
+      <a href="CV.pdf" class="btn" target="_blank" style="margin-left: 15px;">View CV</a>
 
     </div>
 
@@ -63,11 +69,16 @@
 
     <div class="about-content">
       <h2 class="heading">About <span>Me</span></h2>
-      <h3>Python Developer!</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores enim excepturi voluptatum voluptas eum,
-        quisquam expedita non et, obcaecati dolores magni error aut.</p>
+      <h3>Cross Platform Mobile Application Developer!</h3>
+      <p>Hi, I’m Muhammad Jawad. I recently graduated in Computer Science with a specialization in Artificial
+        Intelligence. My
+        main focus is Python and React Native, and I also enjoy working with data science tools to make sense of
+        information and
+        build useful solutions. I like taking on projects where I can turn ideas into something practical, whether
+        that’s a
+        mobile app, a model, or a simple tool that solves a real problem.</p>
 
-      <a href="#" class="btn">Read More</a>
+      <!-- <a href="#" class="btn">Read More</a> -->
     </div>
   </section>
 
@@ -78,29 +89,29 @@
     <div class="services-container">
       <div class="services-box">
         <i class='bx bx-code-alt'></i>
-        <h3>Machine Learning</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem esse reiciendis atque fugit eius
-          perspiciatis impedit cupiditate maiores ut optio, quos sed animi!</p>
+        <h3>Python Programming</h3>
+        <p>I use Python to build simple, reliable programs that get real work done. From scripts to full projects, it
+          helps me solve problems efficiently.</p>
 
-        <a href="#" class="btn">Read More</a>
+        <!-- <a href="#" class="btn">Read More</a> -->
       </div>
 
       <div class="services-box">
         <i class='bx bx-code-curly'></i>
-        <h3>React Native</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem esse reiciendis atque fugit eius
-          perspiciatis impedit cupiditate maiores ut optio, quos sed animi!</p>
+        <h3>Data Science</h3>
+        <p>I work with data to find patterns, answer questions, and make informed decisions. My focus is on turning raw
+          numbers into useful insights.</p>
 
-        <a href="#" class="btn">Read More</a>
+        <!-- <a href="#" class="btn">Read More</a> -->
       </div>
 
       <div class="services-box">
         <i class='bx bx-paint'></i>
-        <h3>Graphic Designing</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem esse reiciendis atque fugit eius
-          perspiciatis impedit cupiditate maiores ut optio, quos sed animi!</p>
+        <h3>React Naive</h3>
+        <p>I turn Figma designs into functional React Native apps. The result is a clean, responsive mobile app that
+          runs smoothly on iOS and Android.</p>
 
-        <a href="#" class="btn">Read More</a>
+        <!-- <a href="#" class="btn">Read More</a> -->
       </div>
     </div>
   </section>
@@ -176,16 +187,16 @@
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
 
-    <form action="#">
+    <form action="https://formspree.io/f/yourformid" method="POST">
       <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="email" name="email" placeholder="Email Address">
       </div>
       <div class="input-box">
-        <input type="number" placeholder="Mobile Number">
-        <input type="text" placeholder="Email Subject">
+        <input type="number" name="phone" placeholder="Mobile Number">
+        <input type="text" name="subject" placeholder="Email Subject">
       </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
       <input type="submit" value="Send Message" class="btn">
     </form>
   </section>

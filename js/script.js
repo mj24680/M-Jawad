@@ -19,7 +19,7 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset +height){
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
@@ -46,14 +46,14 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
-ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Python Developer', 'React Native Developer', 'Graphic Designer'],
+    strings: ['AI Engineer', 'Python Developer', 'React Native Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -63,7 +63,7 @@ const typed = new Typed('.multiple-text', {
 // pop up
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var popup = document.getElementById('popup');
     var closeButton = document.getElementById('close-btn');
 
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     popup.classList.add('show');
 
     // Close the popup when the button is clicked
-    closeButton.addEventListener('click', function() {
+    closeButton.addEventListener('click', function () {
         popup.classList.remove('show');
     });
 });
